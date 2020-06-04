@@ -1,0 +1,167 @@
+/* GENERAL */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* ANIMATIONS */
+@media (min-width: 992px) {
+    .animate {
+      animation-duration: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+}
+  
+@keyframes slideIn {
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+    100% {
+      transform:translateY(0rem);
+      opacity: 1;
+    }
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+}
+  
+@-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+    }
+    0% {
+      -webkit-transform: translateY(1rem);
+      -webkit-opacity: 0;
+    }
+}
+  
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+/* HEADER */
+#header {
+    background-color: #C11414;
+    margin-bottom: 0;
+}
+
+#header img {
+    margin: auto;
+}
+
+#header-icons {
+    color: white;
+    font-size: 32px;
+    margin: auto;
+}
+
+#header-icons li {
+    margin: 0 2vw;
+}
+
+#header-icons li a {
+    color: white;
+}
+
+#header-icons li a:hover {
+    color: #FFB352;
+}
+
+/* NAVBAR */
+#navbar {
+    background-color: #650000;
+    padding: 1vh 0;
+    margin-bottom: 5vh;
+}
+
+#navbar button {
+    margin-left: 2vw;
+}
+
+#navbar .dropdown {
+    color: black;
+}
+
+#navbar .nav-link {
+    color: white;
+    margin: 0 1vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+#navbar .active .nav-link {
+    color: #FFB352;
+}
+
+#navbar .nav-link:hover {
+    color: #FFB352;
+}
+
+#navbar .dropdown-menu {
+    margin-left: 1vw;
+}
+
+#navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* MOT DU PRESIDENT */
+#president {
+    margin-bottom: 5vh;
+}
+
+#president h1{
+    border-bottom: 1px solid black;
+    padding-bottom: 3vh;
+    margin-bottom: 3vh;
+}
+
+#president p {
+    margin-bottom: 3vh;
+}
+
+#mot{
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 3vh 3vw;
+    background-image: url(ressources/images/parchemin.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* ACTUS */
+#actus {
+    margin-bottom: 5vh;
+}
+
+#actus h1 {
+    border-bottom: 1px solid black;
+    padding-bottom: 3vh;
+    margin-bottom: 3vh;
+}
+
+/* FOOTER */
+#footer {
+    background-color: #650000;
+    margin-bottom: 0;
+}
+
+#footer p {
+    margin: auto;
+    color: white;
+    text-align: center;
+}
